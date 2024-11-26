@@ -4,6 +4,7 @@
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
+      <a name="appear" val="center"/>
       <a name="facing" val="west"/>
     </tool>
     <tool name="Pin">
@@ -424,7 +425,7 @@
       <a name="facing" val="north"/>
       <a name="label" val="C"/>
     </comp>
-    <comp lib="0" loc="(900,590)" name="Tunnel">
+    <comp lib="0" loc="(900,580)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="WSELE"/>
     </comp>
@@ -555,11 +556,11 @@
     <comp lib="8" loc="(1730,405)" name="Text">
       <a name="text" val="ALU Status"/>
     </comp>
+    <comp lib="8" loc="(1950,115)" name="Text">
+      <a name="text" val="manual cycle"/>
+    </comp>
     <comp lib="8" loc="(1950,355)" name="Text">
       <a name="text" val="input"/>
-    </comp>
-    <comp lib="8" loc="(1952,116)" name="Text">
-      <a name="text" val="manual cycle"/>
     </comp>
     <comp lib="8" loc="(2040,250)" name="Text">
       <a name="text" val="address"/>
@@ -761,7 +762,7 @@
     <wire from="(820,180)" to="(830,180)"/>
     <wire from="(820,200)" to="(830,200)"/>
     <wire from="(90,440)" to="(90,450)"/>
-    <wire from="(900,550)" to="(900,590)"/>
+    <wire from="(900,550)" to="(900,580)"/>
     <wire from="(910,520)" to="(920,520)"/>
     <wire from="(910,540)" to="(930,540)"/>
     <wire from="(920,320)" to="(920,520)"/>
