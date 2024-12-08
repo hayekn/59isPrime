@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.8.0" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
+<project source="3.9.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.9.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -353,10 +353,6 @@
       <a name="spacing" val="2"/>
     </comp>
     <comp lib="0" loc="(430,390)" name="Splitter">
-      <a name="bit0" val="3"/>
-      <a name="bit1" val="2"/>
-      <a name="bit2" val="1"/>
-      <a name="bit3" val="0"/>
       <a name="fanout" val="4"/>
       <a name="incoming" val="4"/>
       <a name="spacing" val="2"/>
@@ -576,6 +572,11 @@
     </comp>
     <comp lib="8" loc="(1140,190)" name="Text">
       <a name="text" val="R0"/>
+    </comp>
+    <comp lib="8" loc="(1172,447)" name="Text">
+      <a name="color" val="#fc0000"/>
+      <a name="font" val="SansSerif bold 8"/>
+      <a name="text" val="note: register will load with back-logged ALU register before instruction cycle is over."/>
     </comp>
     <comp lib="8" loc="(1660,95)" name="Text">
       <a name="text" val="ALU Out"/>
