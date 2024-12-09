@@ -586,8 +586,16 @@
       <a name="font" val="SansSerif bold 8"/>
       <a name="text" val="note: register will load with back-logged ALU register before instruction cycle is over."/>
     </comp>
+    <comp lib="8" loc="(1578,474)" name="Text">
+      <a name="color" val="#fc0000"/>
+      <a name="text" val="Maybe we can use controlled buffer to make the data go through when 4 ticks happened, increasing the counter?"/>
+    </comp>
     <comp lib="8" loc="(1660,95)" name="Text">
       <a name="text" val="ALU Out"/>
+    </comp>
+    <comp lib="8" loc="(1662,458)" name="Text">
+      <a name="color" val="#fc0000"/>
+      <a name="text" val="Register file is overwritten in the middle of the instruction"/>
     </comp>
     <comp lib="8" loc="(1730,355)" name="Text">
       <a name="text" val="ALU Status"/>
