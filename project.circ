@@ -84,7 +84,7 @@
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(1010,540)" name="Tunnel">
-      <a name="label" val="C"/>
+      <a name="label" val="cycle3"/>
     </comp>
     <comp lib="0" loc="(1010,560)" name="Tunnel">
       <a name="label" val="WENAB"/>
@@ -202,10 +202,6 @@
       <a name="facing" val="west"/>
       <a name="labelloc" val="north"/>
       <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="0" loc="(1730,270)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="C"/>
     </comp>
     <comp lib="0" loc="(1800,540)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -335,6 +331,9 @@
     <comp lib="0" loc="(350,130)" name="Tunnel">
       <a name="label" val="overrideHalt"/>
       <a name="labelfont" val="Dialog bold 16"/>
+    </comp>
+    <comp lib="0" loc="(360,800)" name="Tunnel">
+      <a name="label" val="cycle3"/>
     </comp>
     <comp lib="0" loc="(380,200)" name="Pin">
       <a name="appearance" val="classic"/>
@@ -526,18 +525,6 @@
       <a name="appearance" val="logisim_evolution"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="4" loc="(1660,150)" name="Register">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="4" loc="(1730,150)" name="Register">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="4" loc="(1800,150)" name="Register">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="width" val="4"/>
-    </comp>
     <comp lib="4" loc="(270,680)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
       <a name="trigger" val="falling"/>
@@ -569,6 +556,9 @@
     <comp lib="8" loc="(1005,480)" name="Text">
       <a name="text" val="Write Data"/>
     </comp>
+    <comp lib="8" loc="(105,44)" name="Text">
+      <a name="text" val="Suelynn Lee (ID 261090996)"/>
+    </comp>
     <comp lib="8" loc="(105,860)" name="Text">
       <a name="text" val="manual cycle"/>
     </comp>
@@ -581,21 +571,28 @@
     <comp lib="8" loc="(1140,190)" name="Text">
       <a name="text" val="R0"/>
     </comp>
+    <comp lib="8" loc="(117,21)" name="Text">
+      <a name="text" val="Nicholas Hayek (ID _________)"/>
+    </comp>
     <comp lib="8" loc="(1170,445)" name="Text">
       <a name="color" val="#fc0000"/>
       <a name="font" val="SansSerif bold 8"/>
       <a name="text" val="note: register will load with back-logged ALU register before instruction cycle is over."/>
     </comp>
-    <comp lib="8" loc="(1578,474)" name="Text">
+    <comp lib="8" loc="(1240,542)" name="Text">
+      <a name="color" val="#2500fc"/>
+      <a name="text" val="change this cycle3 to C to go back to original"/>
+    </comp>
+    <comp lib="8" loc="(1575,470)" name="Text">
       <a name="color" val="#fc0000"/>
       <a name="text" val="Maybe we can use controlled buffer to make the data go through when 4 ticks happened, increasing the counter?"/>
     </comp>
-    <comp lib="8" loc="(1660,95)" name="Text">
-      <a name="text" val="ALU Out"/>
-    </comp>
-    <comp lib="8" loc="(1662,458)" name="Text">
+    <comp lib="8" loc="(1660,455)" name="Text">
       <a name="color" val="#fc0000"/>
       <a name="text" val="Register file is overwritten in the middle of the instruction"/>
+    </comp>
+    <comp lib="8" loc="(1660,95)" name="Text">
+      <a name="text" val="ALU Out"/>
     </comp>
     <comp lib="8" loc="(1730,355)" name="Text">
       <a name="text" val="ALU Status"/>
@@ -631,6 +628,10 @@
     </comp>
     <comp lib="8" loc="(420,560)" name="Text">
       <a name="text" val="Counter"/>
+    </comp>
+    <comp lib="8" loc="(480,827)" name="Text">
+      <a name="color" val="#2100fc"/>
+      <a name="text" val="remove this tunnel to go back to original"/>
     </comp>
     <comp lib="8" loc="(555,195)" name="Text">
       <a name="text" val="Instruction RAM"/>
@@ -688,25 +689,17 @@
     <wire from="(1630,290)" to="(1640,290)"/>
     <wire from="(1630,310)" to="(1640,310)"/>
     <wire from="(1660,120)" to="(1660,180)"/>
-    <wire from="(1660,220)" to="(1660,260)"/>
-    <wire from="(1660,260)" to="(1730,260)"/>
+    <wire from="(1660,180)" to="(1870,180)"/>
     <wire from="(1660,320)" to="(1710,320)"/>
     <wire from="(170,310)" to="(170,350)"/>
     <wire from="(170,350)" to="(230,350)"/>
-    <wire from="(1720,180)" to="(1730,180)"/>
-    <wire from="(1730,220)" to="(1730,260)"/>
-    <wire from="(1730,260)" to="(1730,270)"/>
-    <wire from="(1730,260)" to="(1800,260)"/>
-    <wire from="(1730,270)" to="(1740,270)"/>
-    <wire from="(1790,180)" to="(1800,180)"/>
-    <wire from="(1800,220)" to="(1800,260)"/>
     <wire from="(1800,540)" to="(1810,540)"/>
     <wire from="(1800,560)" to="(1800,570)"/>
     <wire from="(1800,560)" to="(1810,560)"/>
+    <wire from="(1820,490)" to="(1820,500)"/>
     <wire from="(1840,520)" to="(1840,550)"/>
     <wire from="(1850,490)" to="(2410,490)"/>
     <wire from="(1850,510)" to="(1870,510)"/>
-    <wire from="(1860,180)" to="(1870,180)"/>
     <wire from="(1870,180)" to="(1870,510)"/>
     <wire from="(1890,280)" to="(2030,280)"/>
     <wire from="(1890,60)" to="(1890,280)"/>
@@ -745,8 +738,10 @@
     <wire from="(2160,160)" to="(2170,160)"/>
     <wire from="(240,380)" to="(240,410)"/>
     <wire from="(240,410)" to="(410,410)"/>
-    <wire from="(240,730)" to="(240,870)"/>
+    <wire from="(240,730)" to="(240,800)"/>
     <wire from="(240,730)" to="(260,730)"/>
+    <wire from="(240,800)" to="(240,870)"/>
+    <wire from="(240,800)" to="(360,800)"/>
     <wire from="(240,870)" to="(290,870)"/>
     <wire from="(2410,230)" to="(2410,260)"/>
     <wire from="(2410,260)" to="(2410,490)"/>
