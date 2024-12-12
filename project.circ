@@ -556,11 +556,11 @@
     <comp lib="8" loc="(1005,480)" name="Text">
       <a name="text" val="Write Data"/>
     </comp>
-    <comp lib="8" loc="(105,44)" name="Text">
-      <a name="text" val="Suelynn Lee (ID 261090996)"/>
-    </comp>
     <comp lib="8" loc="(105,860)" name="Text">
       <a name="text" val="manual cycle"/>
+    </comp>
+    <comp lib="8" loc="(109,65)" name="Text">
+      <a name="text" val="Suelynn Lee (ID 261090996)"/>
     </comp>
     <comp lib="8" loc="(110,265)" name="Text">
       <a name="text" val="CP"/>
@@ -571,25 +571,17 @@
     <comp lib="8" loc="(1140,190)" name="Text">
       <a name="text" val="R0"/>
     </comp>
-    <comp lib="8" loc="(117,21)" name="Text">
-      <a name="text" val="Nicholas Hayek (ID _________)"/>
-    </comp>
     <comp lib="8" loc="(1170,445)" name="Text">
       <a name="color" val="#fc0000"/>
       <a name="font" val="SansSerif bold 8"/>
       <a name="text" val="note: register will load with back-logged ALU register before instruction cycle is over."/>
     </comp>
-    <comp lib="8" loc="(1240,542)" name="Text">
+    <comp lib="8" loc="(121,43)" name="Text">
+      <a name="text" val="Nicholas Hayek (ID _________)"/>
+    </comp>
+    <comp lib="8" loc="(1240,540)" name="Text">
       <a name="color" val="#2500fc"/>
       <a name="text" val="change this cycle3 to C to go back to original"/>
-    </comp>
-    <comp lib="8" loc="(1575,470)" name="Text">
-      <a name="color" val="#fc0000"/>
-      <a name="text" val="Maybe we can use controlled buffer to make the data go through when 4 ticks happened, increasing the counter?"/>
-    </comp>
-    <comp lib="8" loc="(1660,455)" name="Text">
-      <a name="color" val="#fc0000"/>
-      <a name="text" val="Register file is overwritten in the middle of the instruction"/>
     </comp>
     <comp lib="8" loc="(1660,95)" name="Text">
       <a name="text" val="ALU Out"/>
@@ -622,6 +614,9 @@
       <a name="font" val="SansSerif bold 14"/>
       <a name="text" val="address"/>
     </comp>
+    <comp lib="8" loc="(39,21)" name="Text">
+      <a name="text" val="Group 59"/>
+    </comp>
     <comp lib="8" loc="(400,435)" name="Text">
       <a name="font" val="SansSerif bold 14"/>
       <a name="text" val="input"/>
@@ -629,8 +624,8 @@
     <comp lib="8" loc="(420,560)" name="Text">
       <a name="text" val="Counter"/>
     </comp>
-    <comp lib="8" loc="(480,827)" name="Text">
-      <a name="color" val="#2100fc"/>
+    <comp lib="8" loc="(480,825)" name="Text">
+      <a name="color" val="#080afc"/>
       <a name="text" val="remove this tunnel to go back to original"/>
     </comp>
     <comp lib="8" loc="(555,195)" name="Text">
